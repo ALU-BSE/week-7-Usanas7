@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register - Full Stack Conf</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Full Stack Conf</a>
+    </div>
+  </nav>
+
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="h2 mb-4 text-center">Register for Conference</h2>
+      <p class="small text-muted text-center">Hurry! Early bird registration ends in two days.</p>
+      <form class="mx-auto" style="max-width: 600px;">
+        <div class="mb-3">
+          <label for="basicName" class="form-label">Name</label>
+          <input type="text" class="form-control" id="basicName" placeholder="Your name">
+        </div>
+        <div class="mb-3">
+          <label for="basicEmail" class="form-label">Email</label>
+          <input type="email" class="form-control" id="basicEmail" placeholder="Your email">
+        </div>
+        <div class="mb-3">
+          <label for="jobRole" class="form-label">Job Role</label>
+          <select class="form-select" id="jobRole">
+            <option selected disabled>Select your role</option>
+            <option>Full Stack Developer</option>
+            <option>Front-end Developer</option>
+            <option>Back-end Developer</option>
+            <option>DevOps Engineer</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Which Topic Interests You Most?</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="JavaScript Frameworks" id="interestFrameworks">
+            <label class="form-check-label" for="interestFrameworks">
+              JavaScript Frameworks
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="JavaScript Libraries" id="interestLibraries">
+            <label class="form-check-label" for="interestLibraries">
+              JavaScript Libraries
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Node.js" id="interestNode">
+            <label class="form-check-label" for="interestNode">
+              Node.js
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Build Tools" id="interestBuildTools">
+            <label class="form-check-label" for="interestBuildTools">
+              Build Tools
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="ES2015" id="interestES2015">
+            <label class="form-check-label" for="interestES2015">
+              ES2015
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Register</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container text-center">
+      <small>&copy; 2018 Full Stack Conf & Paragraph</small>
+    </div>
+  </footer>
+
+</body>
+</html>
